@@ -45,10 +45,17 @@ class MyApp extends StatelessWidget {
                 fontSize: 14,
               ),
             ),
+            SizedBox(
+              height: 20,
+              width: 180,
+              child: Divider(
+                color: Color.fromRGBO(255, 131, 115, 100.0),
+              ),
+            ),
             Card(
               color: Colors.white,
               margin: EdgeInsets.symmetric(
-                vertical: 15.0,
+                vertical: 10.0,
                 horizontal: 80.0,
               ),
               child: ListTile(
@@ -67,7 +74,7 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                subtitle: Text('+9 0555 444 33 22'),
+                subtitle: Text('+09 0555 444 33 22'),
               ),
             ),
             Card(
