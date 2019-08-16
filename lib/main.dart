@@ -39,9 +39,10 @@ class MyApp extends StatelessWidget {
               'FLUTTER DEVELOPER',
               style: TextStyle(
                 fontFamily: 'SourceSansPro',
-                color: Colors.blueAccent.shade100,
+                color: Color.fromRGBO(255, 131, 115, 100.0),
                 letterSpacing: 5,
                 fontWeight: FontWeight.bold,
+                fontSize: 14,
               ),
             ),
             Card(
