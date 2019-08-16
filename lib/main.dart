@@ -32,71 +32,66 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            SizedBox(
+              height: 5,
+            ),
             Text(
               'FLUTTER DEVELOPER',
               style: TextStyle(
                 fontFamily: 'SourceSansPro',
-                color: Color.fromRGBO(49, 204, 235, 92),
+                color: Colors.blueAccent.shade100,
                 letterSpacing: 5,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Container(
+            Card(
               color: Colors.white,
               margin: EdgeInsets.symmetric(
                 vertical: 15.0,
                 horizontal: 80.0,
               ),
-              padding: EdgeInsets.all(3.0),
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.call,
-                    size: 25.0,
-                    color: Color.fromRGBO(255, 131, 115, 100.0),
+              child: ListTile(
+                contentPadding: EdgeInsets.symmetric(horizontal: 20),
+                leading: Icon(
+                  Icons.call,
+                  size: 40.0,
+                  color: Color.fromRGBO(255, 131, 115, 100.0),
+                ),
+                title: Text(
+                  'Phone',
+                  style: TextStyle(
+                    fontSize: 15.0,
+                    fontFamily: 'SourceSansPro',
+                    color: Color.fromRGBO(83, 92, 255, 100),
+                    fontWeight: FontWeight.bold,
                   ),
-                  SizedBox(
-                    width: 40.0,
-                  ),
-                  Text(
-                    '+9 0555 444 33 22',
-                    style: TextStyle(
-                      fontSize: 15.0,
-                      fontFamily: 'SourceSansPro',
-                      color: Color.fromRGBO(83, 92, 255, 100),
-                      fontWeight: FontWeight.bold,
-                    ),
-                  )
-                ],
+                ),
+                subtitle: Text('+9 0555 444 33 22'),
               ),
             ),
-            Container(
+            Card(
               color: Colors.white,
               margin: EdgeInsets.symmetric(
                 vertical: 15.0,
                 horizontal: 80.0,
               ),
-              padding: EdgeInsets.all(3.0),
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.email,
-                    size: 25.0,
-                    color: Color.fromRGBO(255, 131, 115, 100.0),
+              child: ListTile(
+                contentPadding: EdgeInsets.symmetric(horizontal: 20),
+                leading: Icon(
+                  Icons.email,
+                  size: 40.0,
+                  color: Color.fromRGBO(255, 131, 115, 100.0),
+                ),
+                title: Text(
+                  'E-mail',
+                  style: TextStyle(
+                    fontSize: 15.0,
+                    fontFamily: 'SourceSansPro',
+                    color: Color.fromRGBO(83, 92, 255, 100),
+                    fontWeight: FontWeight.bold,
                   ),
-                  SizedBox(
-                    width: 40.0,
-                  ),
-                  Text(
-                    'fnfidanci@gmail.com',
-                    style: TextStyle(
-                      fontSize: 15.0,
-                      fontFamily: 'SourceSansPro',
-                      color: Color.fromRGBO(83, 92, 255, 100),
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
+                ),
+                subtitle: Text('fnfidanci@gmail.com'),
               ),
             ),
           ],
